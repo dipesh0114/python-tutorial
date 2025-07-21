@@ -26,7 +26,7 @@ def update_video(video_id, new_name, new_time):
     conn.commit()
 
 def delete_video(video_id):
-    cursor.execute("DELETE FROM videos where id = ?", (video_id,))
+    cursor.execute("DELETE FROM videos where id = ?", (video_id,))   # Use a tuple for single parameter
     conn.commit()
 
 def main():
