@@ -14,8 +14,11 @@ cursor.execute('''
 
 def list_videos():
     cursor.execute("SELECT * FROM videos")
+    print("\nList of Videos:")
+    print("*" * 80)
     for row in cursor.fetchall():
         print(row)
+    print("*" * 80)        
 
 def add_video(name, time):
     cursor.execute("INSERT INTO videos (name, time) VALUES (?, ?)", (name, time))
