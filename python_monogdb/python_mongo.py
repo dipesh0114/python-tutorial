@@ -1,7 +1,7 @@
 from  pymongo import MongoClient
 from bson import ObjectId
 
-client = MongoClient("mongodb+srv://dipeshpatro:5yn8qPTH7oMpZq57@cluster0.fq0w9rc.mongodb.net/", tlsAllowInvalidCertificates = True)  # not a good idea to include id and password in code files
+client = MongoClient("mongodb+srv://<username>:<password>@cluster0.fq0w9rc.mongodb.net/", tlsAllowInvalidCertificates = True)  # not a good idea to include id and password in code files
 
 print(client)
 db = client["ytdatabase"]
