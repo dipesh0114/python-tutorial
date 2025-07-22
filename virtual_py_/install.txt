@@ -1,0 +1,3 @@
+pip install -r requirements.txt is the command that is to be run in the terminal in order 
+to 
+install the packages listed in the requirements.txt file in one go.
