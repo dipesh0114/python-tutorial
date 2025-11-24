@@ -1,6 +1,6 @@
 print("hello world")
 
-def chai(n):
+def chai(n):     # it is a method that prints the value of n
     print(n)
 
 chai(10)   
